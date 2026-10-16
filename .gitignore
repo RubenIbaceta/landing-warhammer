@@ -3,3 +3,8 @@ dist/
 .sites-runtime/
 *.zip
 *.log
+.vercel/
+.env
+.env.*
+!.env.example
+*.tar.gz

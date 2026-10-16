@@ -18,6 +18,30 @@ npm run build
 npm run preview
 ```
 
+## GitHub y Vercel
+
+Repositorio: https://github.com/RubenIbaceta/landing-warhammer
+
+Para trabajar desde una copia nueva:
+
+```sh
+git clone https://github.com/RubenIbaceta/landing-warhammer.git
+cd landing-warhammer
+npm ci
+npm run dev
+```
+
+En Vercel, importar el repositorio `RubenIbaceta/landing-warhammer` con estos ajustes:
+
+- Framework: Vite.
+- Root Directory: raíz del repositorio (`./`). El contenido de esta carpeta se sube directamente a la raíz del repositorio.
+- Install Command: `npm ci`.
+- Build Command: `npm run build`.
+- Output Directory: `dist`.
+- No requiere variables de entorno.
+
+`vercel.json` incluye los ajustes de compilación. Al conectar GitHub con Vercel, los cambios enviados a `main` publican una nueva versión de producción.
+
 ## Funcionalidades
 
 - Navegación por secciones y menú móvil.
